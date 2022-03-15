@@ -3,6 +3,11 @@ FROM ubuntu/apache2
 # Install sudo and openssh
 RUN apt update && apt install openssh-server sudo -y 
 
+#Install php
+RUN sudo apt install software-properties-common -y
+RUN add-apt-repository ppa:ondrej/php -y
+RUN sudo apt install -y php7.4 -y
+
 # Set password for root user
 RUN echo 'root:password' | chpasswd
 
@@ -14,8 +19,9 @@ RUN service ssh start
 EXPOSE 22
 
 WORKDIR /var/www/html
-COPY ./html/ .
+COPY ./Webserver/ .
 
+# For mulitple CMD commands. Edit script.sh to add more.
 COPY script.sh script.sh
 RUN chmod +x script.sh
 CMD ["./script.sh"]

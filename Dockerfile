@@ -9,7 +9,6 @@ RUN add-apt-repository ppa:ondrej/php -y
 RUN sudo apt install -y php7.4 -y
 
 # Install common Linux tools
-# RUN sudo apt install grep -y
 
 # Set password for root user
 RUN echo 'root:password' | chpasswd

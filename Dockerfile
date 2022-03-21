@@ -3,10 +3,13 @@ FROM ubuntu/apache2
 # Install sudo and openssh
 RUN apt update && apt install openssh-server sudo -y 
 
-#Install php
+# Install php
 RUN sudo apt install software-properties-common -y
 RUN add-apt-repository ppa:ondrej/php -y
 RUN sudo apt install -y php7.4 -y
+
+# Install common Linux tools
+# RUN sudo apt install grep -y
 
 # Set password for root user
 RUN echo 'root:password' | chpasswd
@@ -21,13 +24,13 @@ EXPOSE 22
 WORKDIR /var/www/html
 COPY ./Webserver/ .
 
+# Set permissions for /var/www/html/upload folder to allow file uploads
+RUN sudo chmod 777 /var/www/html/uploads
+
 # For mulitple CMD commands. Edit script.sh to add more.
+WORKDIR /tmp/
 COPY script.sh script.sh
 RUN chmod +x script.sh
 CMD ["./script.sh"]
-
-# RUN /usr/sbin/sshd -D
-# Start the SSS deamon
-# CMD ["/usr/sbin/sshd", "-D"]
 
 

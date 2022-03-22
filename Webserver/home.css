@@ -1,0 +1,10 @@
+div {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(231, 231, 231);
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}

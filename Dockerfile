@@ -8,8 +8,6 @@ RUN sudo apt install software-properties-common -y
 RUN add-apt-repository ppa:ondrej/php -y
 RUN sudo apt install -y php7.4 -y
 
-# Install common Linux tools
-
 # Set password for root user
 RUN echo 'root:password' | chpasswd
 
@@ -21,7 +19,8 @@ RUN service ssh start
 EXPOSE 22
 
 WORKDIR /var/www/html
-COPY ./Webserver/ .
+COPY ./webserver/ .
+#RUN sudo chmod 777 ./*.php
 
 # Set permissions for /var/www/html/upload folder to allow file uploads
 RUN sudo chmod 777 /var/www/html/uploads

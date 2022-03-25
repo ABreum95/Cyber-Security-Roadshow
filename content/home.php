@@ -1,5 +1,7 @@
-<!DOCTYPE html>
-<html>
+<?php
+   include('session.php');
+?>
+<html">
 
 <head>
     <link rel="stylesheet" href="DTU Notes Style.css">
@@ -12,8 +14,8 @@
             <img src="dtu-logo.png">
         </div>
         <div id="logout">
-            <button onclick="window.location.href='index.html';">
-                Take me back
+            <button onclick="window.location.href='logout.php';">
+                Logout
             </button>
         </div>
     </div>

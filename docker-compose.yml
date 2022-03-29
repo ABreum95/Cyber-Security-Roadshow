@@ -7,7 +7,7 @@ services:
       - "80:80"
       - "22:22"
     volumes:
-      - ./content:/var/www/html
+      #- ./content:/var/www/html
       - ./init/init.sh:/init.sh
       - ./init/apache2.conf:/etc/apache2/apache2.conf
     links:

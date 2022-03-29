@@ -1,4 +1,5 @@
 <?php
+session_start();
 if (isset($_FILES['file'])) {
   $file = $_FILES['file'];
 
@@ -12,20 +13,22 @@ if (isset($_FILES['file'])) {
   $file_ext = explode('.', $file_name);
   $file_ext = strtolower(end($file_ext));
 
+  // Can be used to restrict file upload
   // $allowed = array('txt', 'jpg');
 
   // Checks and error handling
   // if (in_array($file_ext, $allowed)) { // Check if extension is allowed
   if ($file_error === 0) { // Check if any errors occoured
-    if ($file_size <= 2097152) { // Check if file size is too loarge
+    if ($file_size <= 2097152) { // Check if file size is too large
 
       // Make uniqe ID
-      $file_name_new = uniqid('', true) . $file_name; // File name
-      $file_destination = 'uploads/' . $file_name_new; // Upload destionation 
+      $file_name_new = uniqid('', false) . $file_name; // File name
+      $file_destination = 'uploads/' . $_SESSION['myusername'] . '/' . $file_name_new; // Upload destionation 
 
       if (move_uploaded_file($file_tmp, $file_destination)) { // Move tmp file to /uploads
         // Go to back
         echo 'File succesfully uploaded!';
+        echo 'uploads/' . $_SESSION['myusername'];
       } else {
         echo 'Something went wrong, please try uploading again.';
       }

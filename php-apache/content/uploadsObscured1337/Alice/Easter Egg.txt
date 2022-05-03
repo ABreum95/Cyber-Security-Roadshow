@@ -1,0 +1,16 @@
+If you found this file by exploiting the Insecure direct object references (IDOR), 
+then you just earned yourself an nice easter egg!
+
+                      .--.
+                    .'    ',
+                  .'   DTU  ',
+                 /\/\/\/\/\/\/\
+                /\/\/\/\/\/\/\/\
+               Y       DTU      Y
+               |/\/\/\/\/\/\/\/\|
+               |\/\/\/\/\/\/\/\/|
+               Y       DTU      Y
+                \/\/\/\/\/\/\/\/
+                 \/\/\/\/\/\/\/
+                  `.   DTU  .'
+                    `..__..

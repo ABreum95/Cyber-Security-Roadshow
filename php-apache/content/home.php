@@ -2,7 +2,10 @@
 include('session.php');
 ?>
 <html">
+
     <head>
+        <title>DTU Notes</title>
+        <!-- Awesome DTU stylesheet-->
         <link rel="stylesheet" href="DTU Notes Style.css">
     </head>
 
@@ -11,12 +14,12 @@ include('session.php');
         <div id="header"> </div>
         <div>
             <div id="logo">
-                <img src="dtu-logo.png">
+                <img src="Pictures/dtu-logo.png">
             </div>
-            <div id="logout">
-                <button onclick="window.location.href='logout.php';">
-                    Logout
-                </button>
+            <div id="Logout">
+                <a href='logout.php'>
+                    <img src="Pictures/Logout.png">
+                </a>
             </div>
         </div>
 
@@ -25,7 +28,6 @@ include('session.php');
         <h2>Here you can upload your notes!</h2>
 
         <!-- Form for the user to upload files -->
-
         <form action="upload.php" method="post" enctype="multipart/form-data">
             Select image to upload:
             <input type="file" name="file">
@@ -42,7 +44,7 @@ include('session.php');
         <button id="uploads" onclick="seeUserFiles()">See my files</button>
         <script>
             function seeUserFiles() {
-                window.location.href = "uploads/<?php echo $userDir ?>";
+                window.location.href = "myFiles.php";
             }
         </script>
 

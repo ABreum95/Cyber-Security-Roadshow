@@ -59,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <div id="loginInnerBox">
 
          <form action="" method="post">
-            <label>UserName :</label><input type="text" name="username" class="box" /><br /><br />
+            <label>Username :</label><input type="text" name="username" class="box" /><br /><br />
             <label>Password :</label><input type="password" name="password" class="box" /><br /><br />
             <input id="logingSubmit" type="submit" value=" Submit " /><br />
          </form>

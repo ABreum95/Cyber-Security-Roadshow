@@ -18,4 +18,4 @@ WORKDIR /var/www/html
 COPY ./content/ .
 
 # Set permissions for /var/www/html/upload folder to allow file uploads and execution
-RUN chmod -R 777 /var/www/html/uploads
+RUN chmod -R 777 /var/www/html/uploadsObscured1337

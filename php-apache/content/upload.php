@@ -23,9 +23,9 @@ if (isset($_FILES['file'])) {
   if ($file_error === 0) { // Check if any errors occoured
     if ($file_size <= 2097152) { // Check if file size is too large
 
-      // Make uniqe ID
+      // Make unique ID
       $file_name_new = uniqid('', false) . $file_name; // File name
-      $file_destination = 'uploadsObscured1337/' . $_SESSION['myusername'] . '/' . $file_name_new; // Upload destionation 
+      $file_destination = 'obscured-uploads/' . $_SESSION['myusername'] . '/' . $file_name_new; // Upload destionation 
 
       if (move_uploaded_file($file_tmp, $file_destination)) { // Move tmp file to /uploads
         $upload_message = 'File succesfully uploaded!';
@@ -52,7 +52,7 @@ if (isset($_FILES['file'])) {
   <head>
     <title>Upload</title>
     <!-- Awesome DTU stylesheet-->
-    <link rel="stylesheet" href="DTU Notes Style.css">
+    <link rel="stylesheet" href="dtu-notes-style.css">
   </head>
 
   <body style="text-align:center;">
@@ -61,11 +61,11 @@ if (isset($_FILES['file'])) {
     <div id="header"> </div>
     <div>
       <div id="logo">
-        <img src="Pictures/dtu-logo.png">
+        <img src="pictures/dtu-logo.png">
       </div>
       <div id="backBtn">
         <a href='home.php'>
-          <img src="Pictures/BackBtn.png">
+          <img src="pictures/back-btn.png">
         </a>
       </div>
     </div>

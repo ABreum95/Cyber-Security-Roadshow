@@ -107,7 +107,7 @@ img {
 
 }
 
-#logingSubmit {
+#loginSubmit {
   background-color: rgb(153, 0, 0);
   border: none;
   color: white;
@@ -123,7 +123,7 @@ img {
   transition-duration: 0.4s;
 }
 
-#logingSubmit:hover {
+#loginSubmit:hover {
   background-color: rgb(153, 100, 100);
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   color: white;

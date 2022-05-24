@@ -2,7 +2,7 @@
 include('session.php');
 
 // Get users dir and files
-$mydir = 'uploadsObscured1337/' . $user_check;
+$mydir = 'obscured-uploads/' . $user_check;
 $myfiles = array_diff(scandir($mydir), array('.', '..'));
 
 ?>
@@ -11,7 +11,7 @@ $myfiles = array_diff(scandir($mydir), array('.', '..'));
   <head>
     <title>Your personal files</title>
     <!-- Awesome DTU stylesheet-->
-    <link rel="stylesheet" href="DTU Notes Style.css">
+    <link rel="stylesheet" href="dtu-notes-style.css">
   </head>
 
   <body style="text-align:center;">
@@ -20,11 +20,11 @@ $myfiles = array_diff(scandir($mydir), array('.', '..'));
     <div id="header"> </div>
     <div>
       <div id="logo">
-        <img src="Pictures/dtu-logo.png">
+        <img src="pictures/dtu-logo.png">
       </div>
       <div id="backBtn">
         <a href='home.php'>
-          <img src="Pictures/BackBtn.png">
+          <img src="pictures/back-btn.png">
         </a>
       </div>
     </div>

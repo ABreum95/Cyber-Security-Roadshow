@@ -3,7 +3,7 @@ USE db;
 CREATE TABLE users (
 	id int,
 	username varchar(255),
-	passcode varchar(255)
+	password varchar(255)
 	);
 
 INSERT INTO users 

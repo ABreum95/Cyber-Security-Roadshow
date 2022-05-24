@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    $myusername = mysqli_real_escape_string($db, $_POST['username']);
    $mypassword = mysqli_real_escape_string($db, $_POST['password']);
 
-   // SQL reguest
+   // SQL request
    $sql = "SELECT id FROM admin WHERE username = '$myusername' and passcode = '$mypassword'";
    $result = mysqli_query($db, $sql);
    $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
@@ -31,9 +31,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html>
 
 <head>
-   <title>Login Page</title>
+   <title>DTU Note System: Login</title>
    <!-- Awesome DTU stylesheet-->
-   <link rel="stylesheet" href="DTU Notes Style.css">
+   <link rel="stylesheet" href="dtu-notes-style.css">
 </head>
 
 <body style="text-align:center;">
@@ -41,11 +41,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    <div id="header"> </div>
    <div>
       <div id="logo">
-         <img src="Pictures/dtu-logo.png">
+         <img src="pictures/dtu-logo.png">
       </div>
       <div id="backBtn">
          <a href='index.html'>
-            <img src="Pictures/BackBtn.png">
+            <img src="pictures/back-btn.png">
          </a>
       </div>
    </div>
@@ -62,6 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <label>Username :</label><input type="text" name="username" class="box" /><br /><br />
             <label>Password :</label><input type="password" name="password" class="box" /><br /><br />
             <input id="logingSubmit" type="submit" value=" Submit " /><br />
+
          </form>
       </div>
 

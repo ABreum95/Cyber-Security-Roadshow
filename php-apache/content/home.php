@@ -6,7 +6,7 @@ include('session.php');
     <head>
         <title>DTU Notes</title>
         <!-- Awesome DTU stylesheet-->
-        <link rel="stylesheet" href="DTU Notes Style.css">
+        <link rel="stylesheet" href="dtu-notes-style.css">
     </head>
 
     <body style="text-align:center;">
@@ -14,11 +14,11 @@ include('session.php');
         <div id="header"> </div>
         <div>
             <div id="logo">
-                <img src="Pictures/dtu-logo.png">
+                <img src="pictures/dtu-logo.png">
             </div>
-            <div id="Logout">
+            <div id="logout">
                 <a href='logout.php'>
-                    <img src="Pictures/Logout.png">
+                    <img src="pictures/logout.png">
                 </a>
             </div>
         </div>
@@ -44,7 +44,7 @@ include('session.php');
         <button id="uploads" onclick="seeUserFiles()">See my files</button>
         <script>
             function seeUserFiles() {
-                window.location.href = "myFiles.php";
+                window.location.href = "my-files.php";
             }
         </script>
 

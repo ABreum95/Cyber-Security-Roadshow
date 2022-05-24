@@ -19,6 +19,6 @@ services:
       - ./mysql:/docker-entrypoint-initdb.d
     environment:
       MYSQL_ROOT_PASSWORD: "password"
-      MYSQL_USER: "testuser"
-      MYSQL_PASSWORD: "testpassword"
-      MYSQL_DATABASE: "testdb"
+      #MYSQL_USER: "testuser"
+      #MYSQL_PASSWORD: "testpassword"
+      MYSQL_DATABASE: "db"

@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $_SESSION['login_user'] = $myusername;
       header("location: home.php"); // Login and go to home page
    } else {
-      $error = "Your Username or Password is invalid";
+      $error = "Username or Password is invalid";
    }
 }
 ?>

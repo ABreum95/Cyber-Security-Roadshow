@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <body>
     <h1>Development notes</h1>
-    <p>Webserver is making some troubles, however I think it'll soon be up and running. - a </p>
+    <p>Webserver is making some trouble, however I think it'll soon be up and running. - a </p>
     <p>Webserver is running now! - a </p>
     <p>Hi a, it seems like I can't login to the notes system... Any idea why? - b</p>
     <p>Hi bob, I've added you as a user, so you should be able to use the note system now. - a </p>
     <p>Just added some CSS to the website, now it really looks awesome! - b</p>
-    <p>FLAG{F!R57 FL4G! - R3C0N F7W}</p>
+    <p>flag{first_flag_recon_ftw}</p>
 </body>

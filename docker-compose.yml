@@ -10,7 +10,7 @@ services:
       #- ./content:/var/www/html
       - ./init/init.sh:/init.sh
       - ./init/apache2.conf:/etc/apache2/apache2.conf
-    links:
+    depends_on:
       - 'mysql'
     command: ["/init.sh"]
   mysql:

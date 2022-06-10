@@ -12,8 +12,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    $mypassword = mysqli_real_escape_string($db, $_POST['password']);
 
    // SQL request
-   $sql = "SELECT id FROM users WHERE username = '$myusername' AND password = '$mypassword'";
+   // Compute hash of password
+   $hash = hash('sha256', $mypassword);
+   // SQL query
+   $sql = "SELECT id FROM users WHERE username = '$myusername' and password = '$hash'";
+   
+   // Result from query
    $result = mysqli_query($db, $sql);
+   
+   // Convert to array
    $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
    $count = mysqli_num_rows($result);
 

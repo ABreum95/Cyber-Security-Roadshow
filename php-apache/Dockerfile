@@ -39,5 +39,10 @@ RUN sed -i 's/#PubkeyAuthentication yes/PubkeyAuthentication yes/g' /etc/ssh/ssh
 WORKDIR /var/www/html
 COPY ./content/ .
 
+# Placing cats photos
+WORKDIR /cats
+COPY ./cats/ .
+RUN chmod 400 *.jpg
+
 # Set permissions for /var/www/html/upload folder to allow file uploads and execution
 RUN chmod -R 777 /var/www/html/obscured-uploads

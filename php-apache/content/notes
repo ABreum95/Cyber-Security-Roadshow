@@ -6,5 +6,5 @@
     <p>Hi a, it seems like I can't login to the notes system... Any idea why? - b</p>
     <p>Hi bob, I've added you as a user, so you should be able to use the note system now. - a </p>
     <p>Just added some CSS to the website, now it really looks awesome! - b</p>
-    <p>flag{first_flag_recon_ftw}</p>
+    <p>flag{recon_rules}</p>
 </body>

@@ -1,11 +1,10 @@
 FROM php:apache
 
+# Install sudo and SSH
+RUN apt-get update && apt-get install sudo openssh-server -y
+
 # MySQL
 RUN docker-php-ext-install pdo pdo_mysql mysqli
-
-# SSH
-RUN apt update && apt install openssh-server -y 
-#EXPOSE 22
 
 # User configuration
 RUN useradd -ms /bin/bash alice
@@ -13,6 +12,9 @@ RUN useradd -ms /bin/bash bob
 RUN echo 'root:password' | chpasswd
 RUN echo 'alice:alice' | chpasswd
 RUN echo 'bob:bob' | chpasswd
+
+# Enable sudo use of PHP with no password - For priv escalation
+RUN echo "alice ALL = NOPASSWD: /usr/local/bin/php" >> /etc/sudoers
 
 USER bob
 WORKDIR /home/bob

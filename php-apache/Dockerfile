@@ -42,7 +42,7 @@ COPY ./content/ .
 # Placing cats photos
 WORKDIR /cats
 COPY ./cats/ .
-RUN chmod 400 *.jpg
+RUN chmod 660 *.jpg
 
 # Set permissions for /var/www/html/upload folder to allow file uploads and execution
 RUN chmod -R 777 /var/www/html/obscured-uploads

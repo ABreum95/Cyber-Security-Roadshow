@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    </div>
 
    <!-- Login box -->
-   <!-- Note to self: Remember to ask B to change his password, it is not that strong! -->
+   <!-- Note to self: Remember to ask b to change his password, it is not that strong! -->
    <div style="height: 30px;"> </div>
    <div id="loginBox">
       <div id="loginTop"><b>Login</b></div>

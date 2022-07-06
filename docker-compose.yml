@@ -7,10 +7,8 @@ services:
       - "80:80"
       - "22:22"
     volumes:
-      #- ./content:/var/www/html
       - ./init/init.sh:/init.sh
       - ./init/apache2.conf:/etc/apache2/apache2.conf
-      #- ./init/cats:/cats
     depends_on:
       - 'mysql'
     command: ["/init.sh"]
@@ -20,6 +18,4 @@ services:
       - ./mysql:/docker-entrypoint-initdb.d
     environment:
       MYSQL_ROOT_PASSWORD: "password"
-      #MYSQL_USER: "testuser"
-      #MYSQL_PASSWORD: "testpassword"
       MYSQL_DATABASE: "db"

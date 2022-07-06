@@ -1,4 +1,4 @@
-If you found this file by exploiting the Insecure direct object references (IDOR), 
+If you found this file by exploiting the Insecure Direct Object References (IDOR), 
 then you just earned yourself an nice easter egg!
 
                       .--.

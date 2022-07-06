@@ -13,13 +13,8 @@ if (isset($_FILES['file'])) {
   $file_ext = explode('.', $file_name);
   $file_ext = strtolower(end($file_ext));
 
-  // Can be used to restrict file upload
-  // $allowed = array('txt', 'jpg');
-
-
   $upload_message = '';
   // Checks and error handling
-  // if (in_array($file_ext, $allowed)) { // Check if extension is allowed
   if ($file_error === 0) { // Check if any errors occoured
     if ($file_size <= 2097152) { // Check if file size is too large
 
@@ -38,13 +33,6 @@ if (isset($_FILES['file'])) {
   } else {
     $upload_message = $file_error;
   }
-  //} else {
-  //  echo 'File extension is not allowed';
-  //}
-
-  // Go to back
-
-
 } ?>
 
 <html">

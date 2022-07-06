@@ -1,4 +1,5 @@
 <?php
+   # Config file for the database
    define('DB_SERVER', 'mysql');
    define('DB_USERNAME', 'root');
    define('DB_PASSWORD', 'password');
@@ -15,7 +16,4 @@
     echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
     exit;
    }
-/*
-   echo "Success: A proper connection to MySQL was made! The my_db database is great." . PHP_EOL. "\n";
-   echo "Host information: " . mysqli_get_host_info($db) . PHP_EOL. "\n";*/
 ?>

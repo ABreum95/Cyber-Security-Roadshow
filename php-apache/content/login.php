@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html>
 
 <head>
-   <title>DTU Note System: Login</title>
+   <title>DTU Notes: Login</title>
    <!-- Awesome DTU stylesheet-->
    <link rel="stylesheet" href="dtu-notes-style.css">
 </head>

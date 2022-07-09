@@ -9,7 +9,7 @@ $myfiles = array_diff(scandir($mydir), array('.', '..'));
 <html">
 
   <head>
-    <title>Your personal files</title>
+    <title>DTU Notes: My files</title>
     <!-- Awesome DTU stylesheet-->
     <link rel="stylesheet" href="dtu-notes-style.css">
   </head>
@@ -29,7 +29,7 @@ $myfiles = array_diff(scandir($mydir), array('.', '..'));
       </div>
     </div>
 
-    <h2>Here you can access all your notes!</h2>
+    <h2>You have uploaded the files below</h2>
 
     <!-- List files -->
     <td>

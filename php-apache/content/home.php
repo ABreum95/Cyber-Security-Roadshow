@@ -4,7 +4,7 @@ include('session.php');
 <html">
 
     <head>
-        <title>DTU Notes</title>
+        <title>DTU Notes: Home</title>
         <!-- Awesome DTU stylesheet-->
         <link rel="stylesheet" href="dtu-notes-style.css">
     </head>
@@ -24,17 +24,17 @@ include('session.php');
         </div>
 
 
-        <h1>Welcome to your personal DTU note page!</h1>
-        <h2>Here you can upload your notes!</h2>
+        <h1>Welcome to your personal DTU Notes page!</h1>
+        <h2>Upload your files here</h2>
 
         <!-- Form for the user to upload files -->
         <form action="upload.php" method="post" enctype="multipart/form-data">
-            Select image to upload:
+            Select file to upload:
             <input type="file" name="file">
             <input type="submit" value="Upload file">
         </form>
 
-        <h2>Or you can click here to view your already uploaded files</h2>
+        <h2>Click below to see already uploaded files</h2>
 
         <!-- Php, Button and script to take the user to files -->
         <?php

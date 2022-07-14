@@ -24,6 +24,7 @@ RUN echo 'flag{reverse_shell}' > flag.txt
 # alice configurations
 USER alice
 WORKDIR /home/alice
+
 # Generate SSH key with no password
 RUN mkdir .ssh
 RUN ssh-keygen -q -t rsa -N '' -f .ssh/id_rsa

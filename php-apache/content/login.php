@@ -11,7 +11,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    $myusername = mysqli_real_escape_string($db, $_POST['username']);
    $mypassword = mysqli_real_escape_string($db, $_POST['password']);
 
-   // SQL request
    // Compute hash of password
    $hash = hash('sha256', $mypassword);
    // SQL query

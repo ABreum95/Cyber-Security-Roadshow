@@ -37,7 +37,7 @@ USER root
 WORKDIR /root
 RUN echo 'flag{toor}' > flag.txt
 
-# Start ssh with root login permitted
+# Start ssh with public key authentication permitted
 RUN sed -i 's/#PubkeyAuthentication yes/PubkeyAuthentication yes/g' /etc/ssh/sshd_config
 
 # Copy webserver files. We need to copy such that, e.g., uploads are not persistent

@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html>
 
 <head>
-   <title>DTU Note System: Login</title>
+   <title>DTU Notes: Login</title>
    <!-- Awesome DTU stylesheet-->
    <link rel="stylesheet" href="dtu-notes-style.css">
 </head>
@@ -66,8 +66,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <div id="loginInnerBox">
 
          <form action="" method="post">
-            <label>Username :</label><input type="text" name="username" class="box" /><br /><br />
-            <label>Password :</label><input type="password" name="password" class="box" /><br /><br />
+            <label>Username</label><input type="text" name="username" class="box" /><br /><br />
+            <label>Password</label><input type="password" name="password" class="box" /><br /><br />
             <input id="logingSubmit" type="submit" value=" Submit " /><br />
 
          </form>

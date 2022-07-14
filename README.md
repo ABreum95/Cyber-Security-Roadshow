@@ -1,12 +1,6 @@
-# Cyber-Security-Roadshow
-Cyber Security Roadshow - Bachelor Project. Andreas and Christian
+# Cybersecurity Roadshow
+Cybersecurity Roadshow - Hands on hacking / The Cyber Kill Chain, Bachelor Project by Andreas and Christian
 
-## Build the dockers
-sudo docker-compose build
+This repository contains the final product of the project.
 
-## Start the dockers
-sudo docker-compose up -d
-Wait a few minutes to lets sql start
-
-## Stop the dockers
-sudo docker-compose down
+For installation and walkthrough instructions, see the provided pdf files.

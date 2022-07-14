@@ -38,7 +38,6 @@ WORKDIR /root
 RUN echo 'flag{toor}' > flag.txt
 
 # Start ssh with root login permitted
-RUN sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
 RUN sed -i 's/#PubkeyAuthentication yes/PubkeyAuthentication yes/g' /etc/ssh/sshd_config
 
 # Copy webserver files. We need copy such that e.g. uploads are not persitent

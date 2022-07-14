@@ -2,7 +2,7 @@
    # Config file for the database
    define('DB_SERVER', 'mysql');
    define('DB_USERNAME', 'root');
-   define('DB_PASSWORD', 'password');
+   define('DB_PASSWORD', 'Ko2PgTMFuxfF');
    define('DB_DATABASE', 'db');
    $db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
    

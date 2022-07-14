@@ -13,7 +13,7 @@ RUN echo 'root:iseyFVUv3EUA' | chpasswd
 RUN echo 'alice:Ar6IwLKqDo1C' | chpasswd
 RUN echo 'bob:rTPrrGM4SNhD' | chpasswd
 
-# Enable sudo use of PHP with no password - For priv escalation
+# Enable sudo use of PHP with no password for priv escalation
 RUN echo "alice ALL = NOPASSWD: /usr/local/bin/php" >> /etc/sudoers
 
 # bob configurations
@@ -40,11 +40,11 @@ RUN echo 'flag{toor}' > flag.txt
 # Start ssh with root login permitted
 RUN sed -i 's/#PubkeyAuthentication yes/PubkeyAuthentication yes/g' /etc/ssh/sshd_config
 
-# Copy webserver files. We need copy such that e.g. uploads are not persitent
+# Copy webserver files. We need to copy such that, e.g., uploads are not persistent
 WORKDIR /var/www/html
 COPY ./content/ .
 
-# Placing cats photos
+# Copy cats photos
 WORKDIR /cats
 COPY ./cats/ .
 RUN chmod 600 *.jpg

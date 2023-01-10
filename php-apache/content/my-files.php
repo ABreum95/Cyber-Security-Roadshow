@@ -9,9 +9,9 @@ $myfiles = array_diff(scandir($mydir), array('.', '..'));
 <html">
 
   <head>
-    <title>DTU Notes: My files</title>
-    <!-- Awesome DTU stylesheet-->
-    <link rel="stylesheet" href="dtu-notes-style.css">
+    <title>DSB Notes: My files</title>
+    <!-- Awesome DSB stylesheet-->
+    <link rel="stylesheet" href="dsb-notes-style.css">
   </head>
 
   <body style="text-align:center;">
@@ -20,7 +20,7 @@ $myfiles = array_diff(scandir($mydir), array('.', '..'));
     <div id="header"> </div>
     <div>
       <div id="logo">
-        <img src="pictures/dtu-logo.png">
+        <img src="pictures/dsb-logo.png">
       </div>
       <div id="backBtn">
         <a href='home.php'>
@@ -45,6 +45,11 @@ $myfiles = array_diff(scandir($mydir), array('.', '..'));
 
     <!-- Red footer -->
     <div id="footer"></div>
+
+  </body>
+
+  </html>
+<div id="footer"></div>
 
   </body>
 

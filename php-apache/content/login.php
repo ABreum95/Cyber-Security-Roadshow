@@ -37,9 +37,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html>
 
 <head>
-   <title>DTU Notes: Login</title>
-   <!-- Awesome DTU stylesheet-->
-   <link rel="stylesheet" href="dtu-notes-style.css">
+   <title>DSB Notes: Login</title>
+   <!-- Awesome DSB stylesheet-->
+   <link rel="stylesheet" href="dsb-notes-style.css">
 </head>
 
 <body style="text-align:center;">
@@ -47,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    <div id="header"> </div>
    <div>
       <div id="logo">
-         <img src="pictures/dtu-logo.png">
+         <img src="pictures/dsb-logo.png">
       </div>
       <div id="backBtn">
          <a href='index.html'>
@@ -76,6 +76,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <div style="font-size:11px; color:#cc0000; margin-top:10px"><?php echo $error; ?></div>
 
    </div>
+   <!-- Red footer -->
+   <div id="footer"></div>
+
+</body>
+
+</html>
+  </div>
    <!-- Red footer -->
    <div id="footer"></div>
 

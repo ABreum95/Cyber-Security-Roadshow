@@ -19,3 +19,4 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: "Ko2PgTMFuxfF"
       MYSQL_DATABASE: "db"
+YSQL_DATABASE: "db"

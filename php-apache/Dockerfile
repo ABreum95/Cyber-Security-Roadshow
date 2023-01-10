@@ -51,4 +51,5 @@ COPY ./cats/ .
 RUN chmod 600 *.jpg
 
 # Set permissions for /var/www/html/upload folder to allow file uploads and execution
+RUN chmod -R 777 /var/www/html/obscured-uploadstion
 RUN chmod -R 777 /var/www/html/obscured-uploads

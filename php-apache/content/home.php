@@ -4,9 +4,9 @@ include('session.php');
 <html">
 
     <head>
-        <title>DTU Notes: Home</title>
-        <!-- Awesome DTU stylesheet-->
-        <link rel="stylesheet" href="dtu-notes-style.css">
+        <title>DSB Notes: Home</title>
+        <!-- Awesome DSB stylesheet-->
+        <link rel="stylesheet" href="dsb-notes-style.css">
     </head>
 
     <body style="text-align:center;">
@@ -14,7 +14,7 @@ include('session.php');
         <div id="header"> </div>
         <div>
             <div id="logo">
-                <img src="pictures/dtu-logo.png">
+                <img src="pictures/dsb-logo.png">
             </div>
             <div id="logout">
                 <a href='logout.php'>
@@ -24,7 +24,7 @@ include('session.php');
         </div>
 
 
-        <h1>Welcome to your personal DTU Notes page!</h1>
+        <h1>Welcome to your personal DSB Notes page!</h1>
         <h2>Upload your files here</h2>
 
         <!-- Form for the user to upload files -->
@@ -50,6 +50,10 @@ include('session.php');
 
         <!-- Red footer -->
         <div id="footer"></div>
+    </body>
+
+    </html>
+  <div id="footer"></div>
     </body>
 
     </html>

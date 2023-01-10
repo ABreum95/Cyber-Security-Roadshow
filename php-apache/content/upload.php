@@ -39,8 +39,8 @@ if (isset($_FILES['file'])) {
 
   <head>
     <title>Upload</title>
-    <!-- Awesome DTU stylesheet-->
-    <link rel="stylesheet" href="dtu-notes-style.css">
+    <!-- Awesome DSB stylesheet-->
+    <link rel="stylesheet" href="dsb-notes-style.css">
   </head>
 
   <body style="text-align:center;">
@@ -49,7 +49,7 @@ if (isset($_FILES['file'])) {
     <div id="header"> </div>
     <div>
       <div id="logo">
-        <img src="pictures/dtu-logo.png">
+        <img src="pictures/dsb-logo.png">
       </div>
       <div id="backBtn">
         <a href='home.php'>
@@ -62,6 +62,12 @@ if (isset($_FILES['file'])) {
 
 
     <!-- Red footer -->
+    <div id="footer"></div>
+
+  </body>
+
+  </html>
+d footer -->
     <div id="footer"></div>
 
   </body>

@@ -67,9 +67,3 @@ if (isset($_FILES['file'])) {
   </body>
 
   </html>
-d footer -->
-    <div id="footer"></div>
-
-  </body>
-
-  </html>

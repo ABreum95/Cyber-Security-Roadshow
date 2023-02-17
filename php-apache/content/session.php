@@ -14,6 +14,4 @@
       header("location:login.php");
       die();
    }
-?>die();
-   }
 ?>
